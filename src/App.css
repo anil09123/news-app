@@ -1,0 +1,85 @@
+#root {
+  width: 100%;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 1px 2px 1px 2px black;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  margin-top: auto;
+}
+
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #343a40;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+  color: white;
+}
+
+body.dark-mode .navbar-light .navbar-toggler-icon {
+  background-color: white;
+}
+
+body.dark-mode button {
+  background-color: #6c757d;
+  color: white;
+}
+
+
+button {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
