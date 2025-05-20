@@ -42,7 +42,7 @@ function NavigationBar() {
             />
           </Form>
           <br />
-          <button onClick={toggleTheme} className="btn btn-outline-secondary ms-2 ">
+          <button onClick={toggleTheme} className="btn btn-outline-primary ms-2 ">
             {isDarkMode ? 'Light Mode' : 'Dark Mode'}
           </button>
         </Navbar.Collapse>
