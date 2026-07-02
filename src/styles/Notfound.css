@@ -1,0 +1,56 @@
+.not-found-page {
+  width: min(960px, calc(100% - 32px));
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  padding: 110px 0 40px;
+}
+
+.not-found-card {
+  width: min(620px, 100%);
+  text-align: center;
+  border-radius: 30px;
+  padding: clamp(2rem, 6vw, 4rem);
+  animation: fadeSlideUp 0.45s ease both;
+}
+
+.not-found-code {
+  font-size: clamp(4rem, 16vw, 9rem);
+  font-weight: 950;
+  line-height: 0.92;
+  letter-spacing: -0.1em;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.not-found-card h1 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+.not-found-card p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.not-found-link {
+  display: inline-flex;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.1rem;
+  font-weight: 850;
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  box-shadow: 0 14px 28px rgba(36, 87, 255, 0.22);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.not-found-link:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(36, 87, 255, 0.3);
+}
